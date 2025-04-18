@@ -1,0 +1,239 @@
+/* style.css - Styles spécifiques pour index.html */
+
+/* Import de la police futuriste Orbitron */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Fond spatial global */
+body#index-page {
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("Images/universe-background.png") center/cover no-repeat fixed;
+  position: relative;
+}
+
+body#index-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url("Images/universe-background.png") center/cover no-repeat;
+  z-index: -1;
+}
+
+
+/* Menu ergonomique, futuriste, centré en haut */
+body#index-page header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Espacement entre chaque bouton */
+body#index-page header nav ul li {
+  margin: 0 1rem;
+}
+
+/* Style des liens du menu */
+body#index-page header nav ul li a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Effet "hover" sur les boutons */
+body#index-page header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+
+/* Style du titre principal */
+body#index-page h1 {
+  position: relative;
+  z-index: 1;
+  color: #0ff;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  text-shadow: 0 0 10px #0ff, 0 0 30px #0ff, 0 0 60px #0ff;
+  animation: neonFlicker 1.5s infinite alternate;
+  margin-top: 16rem;
+  margin-left: 5rem;
+}
+
+@keyframes neonFlicker {
+  0%, 100% {
+    text-shadow: 0 0 5px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+  }
+  50% {
+    text-shadow: 0 0 2px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+}
+
+/* Footer en bas de page, texte blanc */
+body#index-page footer {
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+}
+
+/* Styles communs à toutes les pages */
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+  background-image: url("Images/universe-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url("Images/universe-background.png") center/cover no-repeat;
+  z-index: -1;
+}
+
+/* Menu ergonomique, futuriste, centré en haut */
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+header nav ul li {
+  margin: 0 1rem;
+}
+header nav ul li a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Titres <h1> communs */
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+/* Footer commun */
+footer {
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+}
+
+/* Styles spécifiques à histoire.html */
+/* Wrapper grid: 4 colonnes pour sections, ligne dédiée pour le contenu */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+/* Intro spanning full width (ligne 1) */
+.intro-block {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  text-align: justify;
+}
+.intro-block h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Sections (cells) alignées sur la ligne 2 */
+.section {
+  grid-row: 2;
+  text-align: center;
+  cursor: pointer;
+}
+.section h2 {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  transition: transform 0.3s;
+}
+.section:hover h2 {
+  transform: scale(1.1);
+}
+.section-title {
+  display: block;
+  color: #fff;
+  margin-top: .5rem;
+}
+
+/* Panneaux de contenu sur la ligne 3, toujours en dessous */
+.section-content {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: none;
+  padding: 1.5rem;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  text-align: justify;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+/* Affichage du contenu correspondant au survol ou au focus */
+.section:nth-of-type(2):hover ~ .section-content:nth-of-type(3),
+.section:nth-of-type(4):hover ~ .section-content:nth-of-type(5),
+.section:nth-of-type(6):hover ~ .section-content:nth-of-type(7),
+.section:nth-of-type(8):hover ~ .section-content:nth-of-type(9),
+.section-content:nth-of-type(3):hover,
+.section-content:nth-of-type(5):hover,
+.section-content:nth-of-type(7):hover,
+.section-content:nth-of-type(9):hover {
+  display: block;
+}

@@ -1,0 +1,75 @@
+/* print.css - Styles dédiés à l'impression de toutes les pages */
+
+@media print {
+  /* --- Réinitialisation et police pour impression --- */
+  body {
+    font-family: serif !important;
+    font-size: 12pt;
+    color: #000 !important;
+    background: none !important;
+    margin: 1cm;
+  }
+
+  /* Cacher les éléments non pertinents à l'impression */
+  header,
+  nav,
+  footer,
+  .section {
+    display: none !important;
+  }
+
+  /* Afficher les sections de contenu et l'introduction */
+  .content-wrapper {
+    display: block !important;
+  }
+  .intro-block,
+  .section-content {
+    display: block !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 0 1em;
+  }
+
+  /* Titres et paragraphes */
+  h1 {
+    font-size: 20pt;
+    margin: 0 0 0.5em;
+  }
+  h2 {
+    font-size: 16pt;
+    margin: 1em 0 0.25em;
+  }
+  h3 {
+    font-size: 14pt;
+    margin: 1em 0 0.25em;
+  }
+  p {
+    margin: 0 0 0.75em;
+    text-align: justify;
+    orphans: 2;
+    widows: 2;
+  }
+
+  /* Ajouter l'URL entre parenthèses après les liens */
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+  }
+
+  /* Gestion des images */
+  img {
+    max-width: 100%;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+
+  /* Éviter les coupures de page inappropriées */
+  .intro-block,
+  .section-content,
+  h2,
+  h3,
+  p {
+    page-break-inside: avoid;
+  }
+}
