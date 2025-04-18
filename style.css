@@ -92,7 +92,7 @@ body#index-page footer {
   margin-top: auto;
 }
 
-/* Styles communs à toutes les pages */
+/* Styles communs à toutes les pages par rapport à index.html */
 body {
   font-family: 'Orbitron', sans-serif;
   margin: 0;
@@ -161,7 +161,7 @@ footer {
   margin-top: auto;
 }
 
-/* Styles spécifiques à histoire.html */
+/*style pour chaque point pour tout les autres page hormis index.html*/
 /* Wrapper grid: 4 colonnes pour sections, ligne dédiée pour le contenu */
 .content-wrapper {
   display: grid;
