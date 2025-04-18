@@ -1,70 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notre Histoire</title> <!-- Page 1-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre Histoire</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="print.css" media="print">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">L'univers</a></li>
-                <li><a href="histoire.html">Notre Histoire </a></li>
-                <li><a href="systeme.html">Notre Système</a></li>
-                <li><a href="mysteres.html">D'autres Mystères</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Notre histoire</h1>
-            <h2>Introduction</h2>
-              <p>
-                L'univers, d'une immensité fascinante et d'une complexité remarquable, nous invite à explorer ses origines et son évolution. Cet article se propose de retracer, de manière structurée, l'histoire de notre cosmos depuis le Big Bang jusqu'à l'émergence de la vie sur Terre. Nous aborderons les grandes étapes qui ont façonné notre univers et les processus qui nous ont menés jusqu'à aujourd'hui.
-              </p>
-              
-              <h2>1. Le Big Bang : La Genèse de l'Univers</h2>
-                  <h3>Origine et Expansion</h3>
-                  <p>
-                    Selon le modèle cosmologique actuellement accepté, l'univers a vu le jour il y a environ 13,8 milliards d'années par un événement cataclysmique connu sous le nom de Big Bang. Ce moment initial, caractérisé par une densité et une température infinies, a marqué le début d'une expansion rapide qui a permis à l'énergie de se transformer en matière.
-                  </p>
-                  <h3>Les Premières Particules</h3>
-                  <p>
-                    Quelques instants après le Big Bang, l'univers s'est refroidi suffisamment pour permettre la formation des premières particules élémentaires – protons, neutrons et électrons – qui se sont ensuite combinées pour créer les éléments légers comme l'hydrogène et l'hélium.
-                  </p>
-              
-              <h2>2. L'Évolution des Structures Cosmiques</h2>
-                  <h3>Formation des Galaxies</h3>
-                  <p>
-                    Au fur et à mesure que l'univers s'étendait et se refroidissait, la matière s'est organisée sous l'effet de la gravité. Les fluctuations de densité ont conduit à la formation des premières étoiles et galaxies. Ces structures massives ont ensuite servi de foyers pour la naissance de systèmes stellaires complexes.
-                  </p>
-                  <h3>Les Trous Noirs et l'Énergie Sombre</h3>
-                  <p>
-                    L'univers recèle également des mystères tels que les trous noirs, objets d'une densité si extrême que rien ne peut s'en échapper, et l'énergie sombre, une force énigmatique responsable de l'accélération de l'expansion cosmique.
-                  </p>
-              
-              <h2>3. La Formation du Système Solaire et de la Terre</h2>
-                  <h3>La Naissance du Soleil</h3>
-                  <p>
-                    Il y a environ 4,6 milliards d'années, au cœur d'un nuage de gaz et de poussières, des perturbations gravitationnelles ont conduit à la formation du Soleil. Cette étoile, centrale dans notre système solaire, a joué un rôle primordial dans la structuration des corps célestes environnants.
-                  </p>
-                  <h3>La Formation de la Terre</h3>
-                  <p>
-                    Les particules de poussière ont progressivement fusionné pour former des planétésimaux, puis des embryons planétaires. La Terre s'est formée à partir de ces collisions et accrétion, évoluant au fil du temps grâce à des processus géologiques et atmosphériques complexes.
-                  </p>
-              
-              <h2>4. L'Émergence de la Vie</h2>
-                  <h3>Premières Conditions Favorables</h3>
-                  <p>
-                    La Terre primitive offrait un environnement riche en éléments chimiques et en énergie, propice à l'apparition des premières molécules organiques. Des conditions particulières, telles que la présence d'eau liquide et d'une atmosphère protectrice, ont permis le développement des réactions chimiques essentielles à la vie.
-                  </p>
-                  <h3>Des Simples Cellules aux Formes de Vie Complexes</h3>
-                  <p>
-                    Les premières cellules, apparues il y a environ 3,8 milliards d'années, ont donné lieu à une biodiversité grandissante par le biais de la mutation et de la sélection naturelle. Cette évolution biologique a conduit à des formes de vie de plus en plus complexes, culminant avec l'émergence de la faune et de la flore qui peuplent aujourd'hui notre planète.
-                  </p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Mon Site</p>
-    </footer>
+<body id="histoire-page">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">L'univers</a></li>
+        <li><a href="histoire.html">Notre Histoire</a></li>
+        <li><a href="systeme.html">Notre Système</a></li>
+        <li><a href="mysteres.html">D'autres Mystères</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Notre histoire</h1>
+
+    <!-- Wrapper en grille adaptative -->
+    <div class="content-wrapper">
+
+      <!-- Introduction -->
+      <div class="intro-block">
+        <h2>Introduction</h2>
+        <p>L'univers, d'une immensité fascinante et d'une complexité remarquable, nous invite à explorer ses origines et son évolution. Cet article se propose de retracer, de manière structurée, l'histoire de notre cosmos depuis le Big Bang jusqu'à l'émergence de la vie sur Terre. Nous aborderons les grandes étapes qui ont façonné notre univers et les processus qui nous ont menés jusqu'à aujourd'hui.</p>
+      </div>
+
+      <!-- Section 1 -->
+      <div class="section">
+        <h2>1</h2>
+        <span class="section-title">Le Big Bang</span>
+      </div>
+      <div class="section-content">
+        <h3>Origine et Expansion</h3>
+        <p>Selon le modèle cosmologique actuellement accepté, l'univers a vu le jour il y a environ 13,8 milliards d'années par un événement cataclysmique connu sous le nom de Big Bang. Ce moment initial, caractérisé par une densité et une température infinies, a marqué le début d'une expansion rapide qui a permis à l'énergie de se transformer en matière.</p>
+        <h3>Les Premières Particules</h3>
+        <p>Quelques instants après le Big Bang, l'univers s'est refroidi suffisamment pour permettre la formation des premières particules élémentaires – protons, neutrons et électrons – qui se sont ensuite combinées pour créer les éléments légers comme l'hydrogène et l'hélium.</p>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="section">
+        <h2>2</h2>
+        <span class="section-title">L'Évolution des Structures Cosmiques</span>
+      </div>
+      <div class="section-content">
+        <h3>Formation des Galaxies</h3>
+        <p>Au fur et à mesure que l'univers s'étendait et se refroidissait, la matière s'est organisée sous l'effet de la gravité. Les fluctuations de densité ont conduit à la formation des premières étoiles et galaxies. Ces structures massives ont ensuite servi de foyers pour la naissance de systèmes stellaires complexes.</p>
+        <h3>Les Trous Noirs et l'Énergie Sombre</h3>
+        <p>L'univers recèle également des mystères tels que les trous noirs, objets d'une densité si extrême que rien ne peut s'en échapper, et l'énergie sombre, une force énigmatique responsable de l'accélération de l'expansion cosmique.</p>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section">
+        <h2>3</h2>
+        <span class="section-title">La Formation du Système Solaire et de la Terre</span>
+      </div>
+      <div class="section-content">
+        <h3>La Naissance du Soleil</h3>
+        <p>Il y a environ 4,6 milliards d'années, au cœur d'un nuage de gaz et de poussières, des perturbations gravitationnelles ont conduit à la formation du Soleil. Cette étoile, centrale dans notre système solaire, a joué un rôle primordial dans la structuration des corps célestes environnants.</p>
+        <h3>La Formation de la Terre</h3>
+        <p>Les particules de poussière ont progressivement fusionné pour former des planétésimaux, puis des embryons planétaires. La Terre s'est formée à partir de ces collisions et accrétion, évoluant au fil du temps grâce à des processus géologiques et atmosphériques complexes.</p>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="section">
+        <h2>4</h2>
+        <span class="section-title">L'Émergence de la Vie</span>
+      </div>
+      <div class="section-content">
+        <h3>Premières Conditions Favorables</h3>
+        <p>La Terre primitive offrait un environnement riche en éléments chimiques et en énergie, propice à l'apparition des premières molécules organiques. Des conditions particulières, telles que la présence d'eau liquide et d'une atmosphère protectrice, ont permis le développement des réactions chimiques essentielles à la vie.</p>
+        <h3>Des Simples Cellules aux Formes de Vie Complexes</h3>
+        <p>Les premières cellules, apparues il y a environ 3,8 milliards d'années, ont donné lieu à une biodiversité grandissante par le biais de la mutation et de la sélection naturelle. Cette évolution biologique a conduit à des formes de vie de plus en plus complexes, culminant avec l'émergence de la faune et de la flore qui peuplent aujourd'hui notre planète.</p>
+      </div>
+
+    </div>
+  </main>
+  <footer><p>&copy; 2025 Mon Site</p></footer>
 </body>
 </html>
